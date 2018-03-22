@@ -1,165 +1,310 @@
 
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+}
+
 * {
-  font-family: sans-serif;
+  font-family: 'Geo', serif;
+  box-sizing: border-box;
 }
 
-table {
-  /*margin: auto;*/
-  border-spacing: 0px 0px;
-  border-collapse: collapse;
+body {
+  background-color: #101010;
 }
 
-.head {
-  width: 498px;
-  height: 70px;
+p {
+  margin: 0;
 }
 
-.bigBox {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+.computer {
+  width: 90vw;
+  height: 90vh;
+  padding: 1.5%;
+  margin: 40px auto;
+  border-radius: 50px;
+  border: 2px solid #202020;
+  background-color: white;
 }
 
-.playButton {
-  color: #ffffff;
-  background-color: #303030;
-  height: 65px;
-  width: 65px;
-  border-radius: 100px;
-  /*margin: 0 auto;*/
-  margin-bottom: 10px;
-  text-align: center;
-  transition: background-color 0.5s, color 0.5s;
-  font-size:20px;
-  cursor: cell;
-  animation: blinker 3s linear infinite;
+.screenBox {
+  display: inline-block;
+  width: calc(100% * 2/3);
+  height: 100%;
+  /*background-color: #101010;*/
+  border: 2px dashed #202020;
+  border-radius: 20px;
+  padding: 1.5%;
+  margin: right 10px;
+  float: left;
+   min-width: 500px;
 }
 
-.player1Button:hover {
-  background-color: #ABEBC6;
-  color: #303030;
+.utilBox {
+  display: inline-block;
+  width: calc(100% * 1/3);
+  height: 100%;
+  float: right;
+  padding-left: 3%;
 }
 
-.player2Button:hover {
-  background-color: #E67E22;
-  color: #303030;
-}
-
-.player1Board {
-  color: #ffffff;
-  background-color: #ABEBC6;
-  height: 400px;
-  width: 400px;
-  border-radius: 480px;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-size: 100px;
-}
-
-.player2Board {
-  color: #ffffff;
-  background-color: #E67E22;
-  height: 400px;
-  width: 400px;
-  border-radius: 480px;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-size: 100px;
-}
-
-
-@keyframes blinker {  
-  50% { opacity: 0; }
-}
-
-.cell {
-  height: 65px;
-  width: 65px;
-  background-color: #303030;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.white {
-  height: 55px;
-  width: 55px;
-  background-color: #ffffff;
-  border-radius: 100px;
-}
-
-.orange {
-  height: 55px;
-  width: 55px;
-  background-color: #E67E22;
-  border-radius: 100px;
-  transition: background-color 0.5s;
-}
-
-.green {
-  height: 55px;
-  width: 55px;
-  background-color: #ABEBC6;
-  border-radius: 100px;
-  transition: background-color 0.5s;
-}
-
-.button {
-  background-color: #303030;
-  color: #ffffff;
-  height: 30px;
-  width: 455px;
-  margin: 5px auto;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.5s, color 0.5s;
-}
-
-.button:hover {
-  background-color: #ffffff;
-  color: #303030;
-  width: 455px;
-  height: 22px;
-  border: 4px solid #303030;
-  transition: background-color 0.5s, color 0.5s;
-}
-
-.message {
-  width: 455px;
-  height: 65px;
+.screen {
   margin: auto;
+  width: 100%;
+  height: 100%;
+  /*background-color: #202020;*/
+  border: 2px solid #202020;
+  border-radius: 80px;
   text-align: center;
-  font-size: 36px;
-  background-color: #303030;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0 0 10px 10px;
+  padding: 3%;
 }
 
-.footer { 
-  background-color: #303030;
-  color: white;
-  height: 195px;
-  width: 195px;
-  border-radius: 195px;
-  margin: 10px auto;
-  font-size: 18px;
+
+.screenContent {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-wrap: normal;
+  text-align: center;
+  font-size: 1.6vw;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 3vw;
+}
+
+.projectDetail {
+  background-color: #202020;
+  color: #ffffff;
+  border-radius: 30px 30px 0 0;
+  padding: 1.5%;
+}
+
+
+#beer {
+  background-color: #F4D03F;
+}
+
+#phone {
+  font-size: 8.5vw;
+  background-color: #E74C3C;
+  color: #ffffff;
+  margin: 3vw auto;
+}
+
+#phone:hover {
+  background: red;
+  background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+  background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+  background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+  background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 8.5vw;
+}
+
+.omlImg {
+  height: auto;
+  width: 100%;
+}
+
+.pLinks {
+  /*border: 2px solid #202020;*/
+  height: 5%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.pLink a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.pLink {
+  width:35%;
+  background-color: #202020;
+  height: 100%;
+}
+
+.arrowLeft {
+  width:13%;
+  border-radius: 0 0 0 30px;
+}
+
+.arrowRight {
+  width:13%;
+  border-radius: 0 0 30px 0;
+  font-size: 1.6vw;
+  color: #fff;
+  cursor: pointer;
+}
+
+.arrowRight:hover, .arrowLeft:hover {
+  background-color: #0183FD;
+}
+
+
+
+.top {
+  /*background-color: black;*/
+  border: 2px solid #202020;
+  height: calc(100% * 1/3);
+  width: 100%;
+  border-radius: 20px;
+  padding: 1.5%;
+}
+
+.middle {
+  /*background-color: black;*/
+  height: calc(100% * 1/3);
+  width: 100%;
+  border-radius: 20px;
+  font-size: 50px;
+}
+
+.bottom {
+  /*background-color: black;*/
+  border: 2px solid #202020;
+  height: calc(100% * 1/3);
+  width: 100%;
+  border-radius: 20px;
+  padding: 1.5%;
+}
+
+.projects{
+  height: 60%;
+  width: 100%;
+  padding: 1.5%;
+  border-radius: 15px 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px dashed #202020;
+}
+
+.projects a {
+  text-decoration: none;
+}
+
+.projectButton {
+  height: 22%;
+  background-color: #202020;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+
+#onmylineButton:hover {
+  background-color: #0183FD;
+}
+
+#beermanboxButton:hover {
+  background-color: #F4D03F;
+}
+
+#nyccraftButton:hover {
+  background-color: #58D68D;
+}
+
+.projectWrapper {
+  height: 12%;
+  background-color: #202020;
+}
+
+.wone {
+  border-radius: 15px 15px 0 0;
+}
+
+.wtwo {
+  border-radius: 0 0 15px 15px;
+}
+
+.projectContent {
+  height: 40%;
+  width: 100%;
+  padding: 1.5%;
+  font-size: 2.5vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.links {
+  height: 50%;
+  width: 100%;
+  padding: 1.5%;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+  border: 2px solid #202020;
+}
+
+.linksContent {
+  height: 50%;
+  width: 100%;
+  color: #202020;
+  font-size: 3vw;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.linksButton {
+  height: 100%;
+  width: 18%;
+  border-radius: 10px;
+  margin: auto 1%;
+  background-color: #202020;
+  text-align: center;
+  cursor: pointer;
+  /*border: 2px solid #202020;*/
+}
+
+.linkImage {
+  width: 90%;
+  height: auto;
+  z-index: 20;
+  color: white;
+  font-size: 3vw;
+}
+
+.hvr-sink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sink:hover, .hvr-sink:focus, .hvr-sink:active {
+  -webkit-transform: translateY(8px);
+  transform: translateY(8px);
+}
+
+.blink {
+  animation: blink-animation 1.2s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

@@ -111,7 +111,6 @@ class Game extends React.Component {
         </div>
         <div className="button" onClick={() => {this.props.resetGame()}}>RESTART</div>
         <p className="message">{this.props.message}</p>
-        <div className="footer" >Ko-Hsin Chu<img src='./me.png'/></div>
       </div>
     )
   }

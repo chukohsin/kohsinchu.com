@@ -10,4 +10,5 @@ export {default as Onmyline} from './Onmyline'
 export {default as Beermanbox} from './Beermanbox'
 export {default as Phone} from './Phone'
 export {default as Nyccraft} from './Nyccraft'
+export {default as About} from './About'
 

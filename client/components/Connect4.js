@@ -84,11 +84,8 @@ class Game extends React.Component {
     }
     return (
       <div>
-        <div className="head">
-          <div className='main'>
-            <Notifications />
-          </div>
-        </div>
+        <Notifications />
+        <div style={{fontSize: '6vw', color: '#202020'}}>CONNECT4</div>
         <div className="bigBox">
           <div className="player1Board" style={{visibility: board1}}>Player Green</div>
           <table>
